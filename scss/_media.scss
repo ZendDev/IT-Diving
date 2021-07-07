@@ -515,9 +515,15 @@
         margin-top: 35px;
     }    
     .sections{
-        height: 475px;
+        height: 545px;
         padding-right:0;
         margin-top: 0;
+    }
+    .modal{
+        height: 100%;
+    }
+    .input-group input{
+        border-radius: 0;
     }
     .it-card__name{
         font-size: 18px;
@@ -650,5 +656,8 @@
     .it-navbar.it-navbar_open{
         opacity: 1;
         visibility: visible;
+    }
+    .it-map__date p br{
+        display: none;
     }
 }

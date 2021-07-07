@@ -219,6 +219,7 @@
             align-items: center;
             justify-content: center;
             font-family: 'Norms Pro Regular';
+            transition: 0.4s;
         }
         &.it-map__item_active{
             &:before{
@@ -369,6 +370,15 @@ h2{
         margin-top: 31px;
         position: relative;
         padding-bottom: 61px;
+        a{
+            color: $title;
+            text-decoration: underline;
+            display: inline-block;
+            transition: 0.3s;
+            &:hover{
+                text-decoration: none;
+            }
+        }
         &:before{
             content:'';
             position: absolute;
@@ -419,7 +429,7 @@ h2{
     &__social{
         ul{
             li{
-                margin:0 5px;
+                margin:0 10px;
                 transition: 0.3s;
                 &:hover{
                     svg circle{
@@ -675,3 +685,22 @@ h2{
     }
   }
 
+  .input-group select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline:none;
+  }
+  
+  .input-group select:not([multiple]) {
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.25em) 0.35em;
+    background-size: 0.85em auto;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzgiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAzOCAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTM2IDJMMTkgMTlMMiAyIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjMiLz4KPC9zdmc+Cg==");
+  }
+  
+  /* скроет иконку стрелки в IE */
+  .input-group select::-ms-expand {
+    display: none;
+  }
