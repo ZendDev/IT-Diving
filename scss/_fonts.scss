@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Norms Pro Meduim';
+    src: url('../fonts/ttnormspro-medium.eot');
+    src: local('TT Norms Pro Medium'), local('TTNormsPro-Medium'),
+        url('../fonts/ttnormspro-medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ttnormspro-medium.woff2') format('woff2'),
+        url('../fonts/ttnormspro-medium.woff') format('woff'),
+        url('../fonts/ttnormspro-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Norms Pro Bold';
+    src: url('../fonts/ttnormspro-bold.eot');
+    src: local('TT Norms Pro Bold'), local('TTNormsPro-Bold'),
+        url('../fonts/ttnormspro-bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ttnormspro-bold.woff2') format('woff2'),
+        url('../fonts/ttnormspro-bold.woff') format('woff'),
+        url('../fonts/ttnormspro-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Norms Pro Regular';
+    src: url('../fonts/ttnormspro-regular.eot');
+    src: local('TT Norms Pro Regular'), local('TTNormsPro-Regular'),
+        url('../fonts/ttnormspro-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ttnormspro-regular.woff2') format('woff2'),
+        url('../fonts/ttnormspro-regular.woff') format('woff'),
+        url('../fonts/ttnormspro-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
