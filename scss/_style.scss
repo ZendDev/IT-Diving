@@ -5,6 +5,16 @@
         width: 100%;
     }
 }
+.modal-poly-text{
+    font-size: 18px;
+    line-height: 23px;
+    display: block;
+    margin-top: 30px;
+    a{
+        display: inline-block;
+        color:#000;
+    }
+}
 .it-mobile-close{
     display: none;
 }
@@ -565,6 +575,79 @@ h2{
 .input-group{
     margin-top: 27px;
     position: relative;
+}
+
+.select2-container .select2-selection--single{
+    height:70px !important;
+}
+.select2-selection__rendered{
+    height: 100% !important;
+    display: flex !important;
+    align-items: center;    
+    font-size: 42px !important;
+    color: #000!important;
+}
+.select2-container--default .select2-selection--single {
+    border: none !important;
+    background: transparent !important;
+    border-bottom: 1px solid #000 !important;
+    border-radius: 0 !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    display:none !important;
+}
+.select2-search {
+    display: none!important;
+}
+.select2-selection__arrow{
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzgiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAzOCAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTM2IDJMMTkgMTlMMiAyIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjMiLz4KPC9zdmc+Cg==") no-repeat;
+    width: 38px !important;
+    height: 23px !important;
+    top: 23px !important;
+}
+.select2-results__option{
+    font-size: 24px !important;
+}
+.input-group_checkbox input{
+    display: none;
+    &:checked + label:before{
+        content: '';
+        background: url(../images/checkbox.svg) no-repeat center center;
+        background-color: #683AFF;
+        margin: auto;
+        border: none;
+        width: 26px;
+        height: 26px;     
+    }
+}
+.input-group_checkbox label{
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    line-height: 21px;
+    &:before{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        cursor: pointer;
+        bottom: -2px;
+        width: 24px;
+        height: 24px;
+        background-color: #FFF;
+        border: 1px solid #683AFF;
+        border-radius: 6px;
+    }
+}
+
+.checkauto input[type=checkbox]:checked + label:before {
+    content: '';
+    background: url(../images/check.png) no-repeat top 5px left 5px;
+    background-color: #028DF0;
+    margin: auto;
+    border: none;
+    width: 20px;
+    height: 20px;
 }
 .sections {
     width: 100%;

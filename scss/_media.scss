@@ -660,4 +660,30 @@
     .it-map__date p br{
         display: none;
     }
+    .modal-poly-text{
+        font-size: 14px;
+    }
+    .select2-container .select2-selection--single {
+        height: 40px !important;
+    }
+    .select2-selection__arrow {
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzgiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAzOCAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTM2IDJMMTkgMTlMMiAyIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjMiLz4KPC9zdmc+Cg==) no-repeat;
+        width: 38px !important;
+        height: 23px !important;
+        top: 10px !important;
+        background-size: 23px;
+    }
+    .select2-selection__rendered {
+        height: 100% !important;
+        display: flex !important;
+        align-items: center;
+        font-size: 32px !important;
+        color: #000 !important;
+    }
+    .input-group_checkbox label {
+        line-height: 1.3 !important;
+    }
+    .input-group_checkbox label:before {
+        bottom: 4px;
+    }
 }
