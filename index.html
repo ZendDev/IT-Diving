@@ -24,6 +24,8 @@
     
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/slick-theme.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="it-bg">
@@ -460,30 +462,30 @@
                         </div>
                         <div class="it-card flex content-between">
                             <ul class="it-card__list">
-                                <li class="it-card__item it-card__item_active">
+                                <li onclick="num(0)" class="it-card__item it-card__item_active">
                                     <span data-content="0">Программирование</span>
                                 </li>
-                                <li class="it-card__item">
+                                <li onclick="num(1)" class="it-card__item">
                                     <span data-content="1">Искусственный интеллект</span>
                                 </li>
-                                <li class="it-card__item">
+                                <li onclick="num(2)" class="it-card__item">
                                     <span data-content="2">Управление ИТ-проектами</span>
                                 </li>
-                                <li class="it-card__item">
+                                <li onclick="num(3)" class="it-card__item">
                                     <span data-content="3">Аналитика</span>
                                 </li>
-                                <li class="it-card__item">
+                                <li onclick="num(4)" class="it-card__item">
                                     <span data-content="4">Продуктовый менеджмент</span>
                                 </li>
-                                <li class="it-card__item">
+                                <li onclick="num(5)" class="it-card__item">
                                     <span data-content="5">Game Dev</span>
                                 </li>
-                                <li class="it-card__item">
+                                <li onclick="num(6)" class="it-card__item">
                                     <span data-content="6">Стажировка и образовательные проекты</span>
                                 </li>
                             </ul>
                             <div class="sections">
-                                <div data-section="0" class="-active">
+                                <div class="sections-item">
                                     <img class="it-card__photo" src="images/photo-1.png" alt="photo">
                                     <img class="it-card__company" src="images/company-1.svg" alt="company">
                                     <div class="it-card__name">Вадим Пуштаев</div>
@@ -501,7 +503,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div data-section="1">
+                                <div class="sections-item">
                                     <img class="it-card__photo" src="images/photo-2.png" alt="photo">
                                     <img class="it-card__company" src="images/company-2.svg" alt="company">
                                     <div class="it-card__name">Евгений Малютин</div>
@@ -519,7 +521,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div data-section="2">
+                                <div class="sections-item">
                                     <img class="it-card__photo" src="images/photo-3.png" alt="photo">
                                     <img class="it-card__company" src="images/company-3.svg" alt="company">
                                     <div class="it-card__name">Инна Галиахметова</div>
@@ -537,7 +539,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div data-section="3">
+                                <div class="sections-item">
                                     <img class="it-card__photo" src="images/photo-4.png" alt="photo">
                                     <img class="it-card__company" src="images/company-4.svg" alt="company">
                                     <div class="it-card__name">Владимир Абазов</div>
@@ -555,7 +557,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div data-section="4">
+                                <div class="sections-item">
                                     <img class="it-card__photo" src="images/photo-5.png" alt="photo">
                                     <img class="it-card__company" src="images/company-5.svg" alt="company">
                                     <div class="it-card__name">Ангелина Беличенко</div>
@@ -573,7 +575,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div data-section="5">
+                                <div class="sections-item">
                                     <img class="it-card__photo" src="images/photo-6.png" alt="photo">
                                     <img class="it-card__company" src="images/company-6.svg" alt="company">
                                     <div class="it-card__name">Роман Горошкин</div>
@@ -591,7 +593,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div data-section="6">
+                                <div class="sections-item">
                                     <img class="it-card__photo" src="images/photo-7.png" alt="photo">
                                     <img class="it-card__company" src="images/company-7.svg" alt="company">
                                     <div class="it-card__name">Евгения Евтеева</div>
@@ -609,7 +611,6 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <span class="overflow"></span>
                             </div>
                         </div>
                         <div class="it-quote flex align-center content-center">
@@ -689,27 +690,10 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="14" cy="14.9229" r="14" fill="white"/>
-                                <path d="M8.62292 11.0071C9.52659 11.0071 10.2458 10.3101 10.2458 9.45628C10.2458 8.60244 9.52659 7.92285 8.62292 7.92285C7.71925 7.92285 7 8.60244 7 9.45628C7 10.3101 7.71925 11.0071 8.62292 11.0071ZM10.043 20.1729V11.7564H7.20287V20.1729H10.043Z" fill="#683AFF"/>
-                                <path d="M21 20.1729V14.2134C21 12.6625 20.0779 11.5473 18.0492 11.5473C16.5554 11.5473 15.5042 12.1921 14.9694 12.7845V11.7564H12.1293V20.1729H14.9694V14.7362C15.3013 14.3528 15.8546 13.9172 16.7029 13.9172C17.5882 13.9172 18.1599 14.2831 18.1599 15.3112V20.1729H21Z" fill="#683AFF"/>
-                            </svg>                                                        
-                        </a>
-                    </li>
-                    <li>
                         <a href="https://www.youtube.com/channel/UCmqEpAsQMcsYaeef4qgECvQ">
                             <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="14" cy="14.9229" r="14" fill="white"/>
                                 <path d="M9.625 7.92285V21.9229L21 14.9229L9.625 7.92285Z" fill="#683AFF"/>
-                            </svg>                                
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="14" cy="14.9229" r="14" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9228 7.92285C11.0375 7.92313 9.03815 7.93273 8.0119 8.93489C7.00978 9.96092 7.00018 12.0541 7.00018 14.8456C10.0998 14.7521 11.5173 14.6745 12.6478 13.5705C13.7516 12.44 13.8293 11.0226 13.9228 7.92285ZM8.01172 20.9109C7.0096 19.8849 7 17.7917 7 15.0002C10.0996 15.0938 11.5171 15.1714 12.6476 16.2753C13.7515 17.4058 13.8291 18.8232 13.9226 21.9227C11.0373 21.9227 9.03798 21.9134 8.01172 20.9109ZM14.0774 21.9227C14.1709 18.8232 14.2485 17.4058 15.3524 16.2753C16.4829 15.1714 17.9004 15.0938 21 15.0002C20.9997 17.7917 20.9901 19.8849 19.988 20.9109C18.9617 21.9134 16.9627 21.9227 14.0774 21.9227ZM14.0774 7.92285C14.1709 11.0226 14.2485 12.44 15.3524 13.5705C16.4829 14.6745 17.9004 14.7521 21 14.8456C20.9997 12.0541 20.9901 9.96092 19.988 8.93489C18.9617 7.93273 16.9627 7.92313 14.0774 7.92285Z" fill="#683AFF"/>
                             </svg>                                
                         </a>
                     </li>
@@ -779,6 +763,7 @@
     <script src="js/wow.min.js"></script>
     <link href="css/select2.min.css" rel="stylesheet" />
     <script src="js/select2.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script>
         new WOW().init();
     </script>

@@ -540,14 +540,14 @@
         margin-top: 20px;
     }
     .sections > div ul li{
-        font-size: 14px;
-        line-height: 18px;    
+        font-size: 14px !important;
+        line-height: 18px !important;    
+    }
+    .slick-list:before{
+        display: none;
     }
     .sections > div ul {
         margin-top: 11px;
-    }
-    .sections > div{
-        padding: 20px;
     }
     .it-card__photo{
         top: -53px;
@@ -685,5 +685,8 @@
     }
     .input-group_checkbox label:before {
         bottom: 4px;
+    }
+    .sections .sections-item{
+        margin-right:0;
     }
 }
